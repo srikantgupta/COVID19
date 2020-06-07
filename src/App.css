@@ -21,7 +21,7 @@ ul.navigation{ background:#2874f0 ; width: 100%; display: inline-block; margin: 
 ul.navigation li{ display: inline-block; margin-left: 5px;padding: 4px 8px 4px 4px; border-right: 1px solid #ffffff; }
 ul.navigation li:last-of-type{ border:none;}
 ul.navigation li a{text-decoration: none; color: #ffffff; display: inline-block; font-weight: bold; text-transform: uppercase;  font-size: 12px;}
-.banner-logo{ display: block; width: 100%; height: 100px;}
+.banner-logo{ display: block; width: 100%; height: 190px;}
 ul{ padding: 0;}
 ul.district{display: block; margin: 0; padding: 0;}
 ul.district li:first-child{ display: block;}
