@@ -1,0 +1,139 @@
+.App {
+  text-align: center;
+  font-size: 12px;
+}
+ul.listitem.date li{ width:100% !important}
+.homepage{text-align: left; width: 80%; display: inline-block;}
+h2.Districtwise_heading{margin:5px 0px; color:#c0392b; border-bottom:2px solid #d35400;}
+/* zonewise start css */
+ul#listitem{
+  list-style: none; border-bottom: 2px solid #ffffff; background-color: palegreen; margin: 0px;
+  display: inline-block; width: 100%; padding: 0;  vertical-align: middle; overflow: auto;
+}
+ul.listitem.mng{ font-weight: bold; color: #e74c3c; margin: 0px; padding: 0px;}
+ul.listitem.mng li{color:red;  text-transform: uppercase; font-weight: bold;  display: inline-block; width: 75px; margin-bottom: 5px;}
+ul#listitem li{ color: white;font-weight: bold;display: inline-block; width: 75px;vertical-align: middle; margin: 5px;}
+/* zonewise end css */
+.covid19 span{ color:  #c0392b; font-size: 48px; border: none;}
+.covid19 span.live_text{ color:  #c0392b; font-size: 10px; }
+.covid19{ display: none; text-transform: uppercase; margin:0px; font-size: 14px; line-height: 28px; color: #ffffff; background: #34495e;}
+ul.navigation{ background:#2874f0 ; width: 100%; display: inline-block; margin: 0 0 5px 0; padding: 0;}
+ul.navigation li{ display: inline-block; margin-left: 5px;padding: 4px 8px 4px 4px; border-right: 1px solid #ffffff; }
+ul.navigation li:last-of-type{ border:none;}
+ul.navigation li a{text-decoration: none; color: #ffffff; display: inline-block; font-weight: bold; text-transform: uppercase;  font-size: 12px;}
+.banner-logo{ display: block; width: 100%; height: 100px;}
+ul{ padding: 0;}
+ul.district{display: block; margin: 0; padding: 0;}
+ul.district li:first-child{ display: block;}
+.stateName{ display: block; padding: 5px; background: #454d55; font-weight: bold; text-transform: uppercase; color: #ffffff;}
+.districtName{ display: block; padding: 5px; background:#f39c12; font-weight: bold; text-transform: uppercase; color: #ffffff; }
+.districtData{display: block;  } 
+ul.districtData li p{display:block; margin: 0; border:  1px solid #ffffff; padding: 5px; background:#7f8c8d; font-weight: bold; text-transform: uppercase; color: #ffffff; }
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+h1{color: red; font-size: 12px; line-height: 24px;}
+.state {
+  color:black;
+  font-weight: 600;
+}
+.recover {
+  color: green;
+  font-weight: 700;
+}
+.confirmed {
+  color: #e67e22;
+  font-weight: 700;
+}
+.death {
+  color: red;
+  font-weight: 700;
+}
+.Green{ background-color: green !important; color: green;}
+.Red{ background-color: red !important; color: red;}
+.Orange{ background-color: orange !important; color: orange;}
+.global_case{ border-top:2px solid #282c34; padding: 5px; margin-bottom: 20px;}
+h1 span{border-bottom: 5px dotted red; text-transform: uppercase;}
+.global_case ul.listitem li{width: 140px;}
+
+ul.listitem{
+  list-style: none; border-bottom: 2px solid #000000;  margin: 0px;
+  display: inline-block; width: 100%; padding: 0;  vertical-align: middle; overflow: auto;
+}
+ul.listitem.mng{ font-weight: bold; color: #e74c3c;}
+ul.listitem li{ font-weight: bold;  display: inline-block; width: 125px;  vertical-align: top; padding-bottom: 5px; margin-bottom: 5px;}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+  
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+ 
+/*		Tablet Layout: 768px.
+		Gutters: 24px.
+		Outer margins: 28px.
+		Inherits styles from: Default Layout.
+-----------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8
+px      68    160    252    344    436    528    620    712    */
+
+
+@media only screen and (min-width: 768px) and (max-width: 1159px) {
+
+}
+
+
+
+/*		Mobile Layout: 320px.
+		Gutters: 24px.
+		Outer margins: 34px.
+		Inherits styles from: Default Layout.
+---------------------------------------------
+cols    1     2      3
+px      68    160    252    */
+@media only screen and (max-width: 767px) {
+  .covid19{display: block;}
+  .banner-logo{ display: none;}
+  ul.listitem.mng li{width: 75px; font-size: 8px;}
+  .global_case ul.listitem li{width: 75px;}
+  ul.listitem li{width: 70px; font-size: 10px;}
+  ul.listitem.mng.zone li{width: 83px;font-size: 12px;}
+}
+
+/*		Wide Mobile Layout: 480px.
+		Gutters: 24px.
+		Outer margins: 22px.
+		Inherits styles from: Default Layout, Mobile Layout.
+------------------------------------------------------------
+cols    1     2      3      4      5
+px      68    160    252    344    436    */
+@media only screen and (min-width: 640px) and (max-width: 767px) {
+
+}
