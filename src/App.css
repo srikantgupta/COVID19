@@ -126,6 +126,7 @@ px      68    160    252    */
   .global_case ul.listitem li{width: 75px;}
   ul.listitem li{width: 70px; font-size: 10px;}
   ul.listitem.mng.zone li{width: 83px;font-size: 12px;}
+  ul.navigation li{padding: 4px 5px 4px 3px;}
 }
 
 /*		Wide Mobile Layout: 480px.
