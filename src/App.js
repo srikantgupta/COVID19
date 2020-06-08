@@ -26,16 +26,16 @@ function App() {
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/districtwise">DistrictWise Update</Link>
+            <Link to="/districtwise">DistrictWise</Link>
           </li>
            <li>
-            <Link to="/zonewise">ZoneWise Update</Link>
+            <Link to="/zonewise">ZoneWise</Link>
           </li>
            <li>
-            <Link to="/statewise">StateWise Update</Link>
+            <Link to="/statewise">StateWise</Link>
           </li>
           <li>
-            <Link to="/global">Global Update</Link>
+            <Link to="/global">Global</Link>
           </li>
         </ul>
 

@@ -3,6 +3,7 @@
   font-size: 12px;
 }
 ul.listitem.date li{ width:100% !important}
+.tagname{ text-align: center;}
 .homepage{text-align: left; width: 80%; display: inline-block;}
 h2.Districtwise_heading{margin:5px 0px; color:#c0392b; border-bottom:2px solid #d35400;}
 /* zonewise start css */
