@@ -19,7 +19,7 @@ ul.listitem.mng{ font-weight: bold; color: #e74c3c; margin: 0px; padding: 0px;}
 ul.listitem.mng li{color:red;  text-transform: uppercase; font-weight: bold;  display: inline-block; width: 75px; margin-bottom: 5px;}
 ul#listitem li{ color: white;font-weight: bold;display: inline-block; width: 75px;vertical-align: middle; margin: 5px;}
 /* zonewise end css */
-.covid19 span{ color:  #c0392b; font-size: 48px; border: none;}
+.covid19 span{ color:  #c0392b; font-size: 48px; border: none; line-height:0px;}
 .covid19 span.live_text{ color:  #c0392b; font-size: 10px; }
 .covid19{ display: none; text-transform: uppercase; margin:0px; font-size: 14px; line-height: 28px; color: #ffffff; background: #34495e;}
 ul.navigation{ background:#2874f0 ; width: 100%; display: inline-block; margin: 0 0 5px 0; padding: 0;}
