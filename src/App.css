@@ -130,6 +130,7 @@ px      68    160    252    */
   ul.listitem li{width: 70px; font-size: 10px;}
   ul.listitem.mng.zone li{width: 83px;font-size: 12px;}
   ul.navigation li{padding: 4px 5px 4px 3px;}
+	h2.Districtwise_heading{font-size: 21px;}
 }
 
 /*		Wide Mobile Layout: 480px.
