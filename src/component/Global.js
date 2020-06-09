@@ -42,7 +42,7 @@ class Global extends Component {
     console.log(CountryList);
     return (
       <div className="container">
-        <h1>
+        <h1 className="global_heading">
           <span>GLOBAL UPDATE COVID19 CASES</span>
         </h1>
         {globals ? (
