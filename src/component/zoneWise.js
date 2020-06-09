@@ -37,7 +37,7 @@ componentDidMount(){
         const { globals } = this.state
         return (
           <div>
-                <h1><span>Full list of Red, Orange, Green Zone districts for Lockdown 3.0</span></h1>
+                <h1 className="global_heading"><span>Full list of Red, Orange, Green Zone districts for Lockdown 3.0</span></h1>
                 <Loader type="ThreeDots"color="#2c3e50" height={100} width={100} timeout={1500}  />
                 {globals ? <div>           
                 <p className="state">Last Update :- {globals.lastupdated}</p>
