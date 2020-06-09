@@ -74,9 +74,9 @@ class Global extends Component {
             <ul className="listitem">
               <li>S. NO.</li>
               <li>Country</li>
-              <li> Total Confirmed</li>
-              <li> Total Deaths</li>
-              <li className="recover"> Total Recovered</li>
+              <li>Confirmed</li>
+              <li>Deaths</li>
+              <li className="recover">Recovered</li>
             </ul>
           </div>
         }
