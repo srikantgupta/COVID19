@@ -85,7 +85,8 @@ class DistrictWise extends Component {
   render() {
     const { errorMsg } = this.state
     return(<div> 
-    <h2 className="Districtwise_heading">India Live Update Districtwise</h2>
+           <h1 className="global_heading"><span>India Live Update Districtwise</span></h1>
+    
     <Loader type="ThreeDots" color="#2c3e50" height={100} width={100}timeout={1500} /> 
      {this.subComponent()} {errorMsg ? <div>{errorMsg}</div> : null} </div>);
   }
