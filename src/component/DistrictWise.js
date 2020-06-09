@@ -21,11 +21,11 @@ class DistrictWise extends Component {
     axios
       .get("https://api.covid19india.org/state_district_wise.json")
       .then((response) => {
-        console.log(response.data);
+  
         this.setState({ categories: response.data });
       })
       .catch((error) => {
-        console.log(error);
+       
         this.setState({ errorMsg: "Error retriving data" });
       });
 
@@ -38,12 +38,14 @@ class DistrictWise extends Component {
     if(Object.keys(categories).length > 0){
         this.categoriesKeys = Object.keys(categories).map((keyo,index) => {
             if(keyo !=="State Unassigned"){
+              var keyoid = keyo.replace(/ +/g, "");
            for (var i = 0; i < index; i++) {
                let Ddata = categories[keyo].districtData;
-               console.log(Ddata);
+              
                this.categoriesdistrictData = Object.keys(Ddata).map((keyi,index) => {
-                console.log(Ddata);
+               
                 var Ddatai = Ddata[keyi];
+                var keyiid = keyi.replace(/ +/g, "");
                 if(Object.keys(Ddata).length > 0){
                     this.categoriesdistrictinnerData =  Object.keys(Ddatai).map((key,index) => {   
                     // return console.log(key);
@@ -58,19 +60,22 @@ class DistrictWise extends Component {
                     }
                 });
             }
-                return <div><strong className="districtName">District :- {keyi}</strong>  <ul className="districtData"><li>{this.categoriesdistrictinnerData}</li></ul> </div>;                 
+                return <ul className="panel-default"><li className="districtName"  data-toggle="collapse" href={'#'+keyiid}><span className="left_move">District :- </span> {keyi}</li>  
+                <ul className="districtData panel-collapse collapse" id={keyiid}><li>{this.categoriesdistrictinnerData}</li></ul> 
+                </ul>;                 
             });   
            }
            return <div>
-           <ul className="district">
-                <li className="stateName">State :- {keyo} </li>
-                <ul><li> {this.categoriesdistrictData}</li>
+           <ul className="district panel-default">
+                <li className="stateName" data-toggle="collapse" href={'#'+keyoid}><span className="left_move">State :- </span> {keyo} </li>
+                <ul className="district_data panel-collapse collapse" id={keyoid}>
+                <div> {this.categoriesdistrictData}</div>
                 </ul>
            </ul>      
            </div>;
         }else{ return ""}
        });    
-       return <div><span>{this.categoriesKeys}</span><span>{this.categoriesdistrictData}</span></div> ;
+       return <div><span>{this.categoriesKeys}</span></div> ;
          }
        else{ return null}
   }
