@@ -57,7 +57,7 @@ componentDidMount(){
         // console.log(CountryList);
         return (
             <div className="chk">
-                <h1><span>india coronavirus/COVID19 cases map state wise</span></h1>
+                <h1 className="global_heading"><span>india coronavirus/COVID19 cases map state wise</span></h1>
                 <Loader type="ThreeDots"color="#2c3e50" height={100} width={100} timeout={1500}  />
                 {globals ? <div>
                 
